@@ -22,8 +22,8 @@ def build(write_page, icon, house_watermark, HOUSE_MARK):
 
   <section class="info-strip">
     <div class="container">
-      <div class="info-item">{icon('clock')} <span><strong>Domingo</strong> 9h e 18h · <strong>Quarta</strong> 19h30</span></div>
-      <div class="info-item">{icon('pin')} <span>Rua Exemplo, 123 — Centro, Marília/SP</span></div>
+      <div class="info-item">{icon('clock')} <span><strong>Domingo</strong> 9h e 18h · <strong>Discipulado toda quinta às</strong> 19h30</span></div>
+      <div class="info-item">{icon('pin')} <span>Rua Brasil, 350 — Centro, Marília/SP</span></div>
       <div class="info-item">{icon('whatsapp')} <span>(14) 00000-0000</span></div>
     </div>
   </section>
