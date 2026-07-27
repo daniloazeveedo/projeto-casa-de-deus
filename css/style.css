@@ -277,6 +277,12 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 }
 .card-photo svg{ width: 40%; height: 40%; opacity: .5; }
 
+.card-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* photo placeholder palette rotation */
 .ph-1{ background: linear-gradient(135deg, var(--teal), #2c5150); color: var(--white); }
 .ph-2{ background: linear-gradient(135deg, var(--gold), var(--gold-deep)); color: var(--white); }
