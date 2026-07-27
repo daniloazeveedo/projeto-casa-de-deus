@@ -467,3 +467,6 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   .section{ padding: 64px 0; }
   .hero{ padding: 56px 0 40px; }
 }
+
+.logo-img{ height: 42px; width: auto; display: block; }
+.footer-logo-img{ height: 34px; }
