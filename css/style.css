@@ -97,6 +97,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
   opacity: .06;
   color: var(--ink);
   z-index: 0;
+  display: none;
 }
 
 /* -------------------------------- buttons -------------------------------- */
