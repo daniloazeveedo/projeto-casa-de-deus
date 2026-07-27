@@ -2,7 +2,7 @@
 
 Site institucional da **Comunidade Casa de Deus**, em Marília/SP. Feito em HTML, CSS e JavaScript puros (sem frameworks, sem build), pronto para publicar no GitHub Pages, Netlify, Vercel ou qualquer hospedagem simples.
 
-Inspirado na estrutura de sites de igreja como o da Lagoinha e da Primeira Igreja Batista de Marília, com identidade visual própria: paleta clara, tipografia Fraunces + Manrope, e um motivo assinatura (o traço de "casa") usado como marca d'água e divisor ao longo do site.
+Inspirado na estrutura de sites de grandes igrejas do brasil e no mundo, porém com identidade visual própria: paleta clara, tipografia Fraunces + Manrope, e um motivo assinatura (o traço de "casa") usado como marca d'água e divisor ao longo do site.
 
 ## Páginas
 
@@ -15,7 +15,7 @@ Inspirado na estrutura de sites de igreja como o da Lagoinha e da Primeira Igrej
 | Mensagens | `mensagens.html` | Galeria de pregações/vídeos |
 | Contato | `contato.html` | Formulário, endereço, telefone, mapa |
 
-## ⚠️ Antes de publicar — o que editar
+## ⚠️ Para eu mesmo lembrar - Antes de publicar — o que editar
 
 Este site foi gerado com **conteúdo de exemplo (placeholder)**. Antes de publicar de verdade, edite:
 
@@ -48,21 +48,8 @@ casa-de-deus/
 
 > `build.py` e `pages.py` são scripts auxiliares usados para gerar as páginas HTML de forma consistente (o mesmo cabeçalho/rodapé em todas). Você **não precisa deles para publicar o site** — pode editar os arquivos `.html` diretamente. Se preferir manter tudo centralizado, edite `pages.py` e rode `python3 build.py` para regenerar as páginas.
 
-## Como rodar localmente
 
-Não precisa de instalação. Basta abrir `index.html` no navegador, ou, para evitar problemas de caminho relativo, rodar um servidor simples:
 
-```bash
-python3 -m http.server 8000
-# depois acesse http://localhost:8000
-```
-
-## Como publicar gratuitamente (GitHub Pages)
-
-1. Suba este projeto para um repositório no seu GitHub (veja o passo a passo abaixo).
-2. No repositório, vá em **Settings → Pages**.
-3. Em "Source", selecione a branch `main` e a pasta `/ (root)`.
-4. Salve. Em alguns minutos o site estará no ar em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
 
 ## Licença
 
