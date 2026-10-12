@@ -55,3 +55,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Botões de copiar (chave PIX e código copia e cola)
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  const label = btn.innerHTML;
+  btn.addEventListener('click', async () => {
+    const source = btn.dataset.copyFrom ? document.getElementById(btn.dataset.copyFrom) : null;
+    const text = source ? source.textContent.trim() : btn.dataset.copy;
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch (e) {
+      const tmp = document.createElement('textarea');
+      tmp.value = text;
+      tmp.setAttribute('readonly', '');
+      tmp.style.position = 'absolute';
+      tmp.style.left = '-9999px';
+      document.body.appendChild(tmp);
+      tmp.select();
+      try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      tmp.remove();
+    }
+    const status = document.getElementById('copy-status');
+    if (ok) {
+      btn.classList.add('copied');
+      btn.textContent = btn.dataset.done || 'Copiado';
+      if (status) status.textContent = btn.dataset.done || 'Copiado';
+      setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = label; }, 2500);
+    } else if (source) {
+      const range = document.createRange();
+      range.selectNodeContents(source);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      btn.textContent = 'Selecionado, copie com Ctrl+C';
+      setTimeout(() => { btn.innerHTML = label; }, 3000);
+    }
+  });
+});

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dízimos e ofertas — Comunidade Casa de Deus</title>
+  <meta name="description" content="Contribua com a Comunidade Casa de Deus pelo PIX: chave CNPJ, QR code e código copia e cola.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><path d=%22M3 11.5 12 4l9 7.5%22 fill=%22none%22 stroke=%22%23B8863E%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/><path d=%22M5.5 10v9.5h4V15h5v4.5h4V10%22 fill=%22none%22 stroke=%22%23B8863E%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Comunidade Casa de Deus" class="logo-img">Casa de Deus<span>Marília</span></a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Início</a>
+        <a href="jesus.html">Jesus</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="ministerios.html">Ministérios</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="mensagens.html">Mensagens</a>
+        <a href="conecte-se.html">Conecte-se</a>
+        <a href="contato.html">Contato</a>
+        <a href="ofertas.html" class="nav-mobile-only active">Dízimos e ofertas</a>
+      </nav>
+      <div class="header-cta">
+        <a href="ofertas.html" class="btn btn-ghost">Contribua</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <section class="page-hero">
+    <div class="container reveal in">
+      <h1>Dízimos e ofertas</h1>
+      <p class="lead">Contribuir é uma forma de adorar a Deus e de cuidar da casa. Você pode ofertar pelo PIX, de onde estiver, ou durante os cultos de domingo.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px;">
+    <div class="container">
+      <div class="pix-panel">
+        <div class="pix-qr">
+          <img src="images/pix-qrcode.svg" alt="QR code PIX da Comunidade Casa de Deus" width="240" height="240">
+          <p>Abra o app do banco, escolha PIX e aponte a câmera para o código.</p>
+        </div>
+        <div>
+          <div class="pix-field">
+            <h2>Chave PIX (CNPJ)</h2>
+            <p class="pix-key">63.330.094/0001-87</p>
+            <button type="button" class="btn btn-primary copy-btn" data-copy="63330094000187" data-done="Chave copiada"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copiar chave</button>
+          </div>
+          <div class="pix-field">
+            <h2>PIX copia e cola</h2>
+            <p class="pix-code" id="pix-code">00020101021126360014br.gov.bcb.pix0114633300940001875204000053039865802BR5925COMUNIDADE CRISTA CASA DE6008BRASILIA62070503***630487F1</p>
+            <button type="button" class="btn btn-ghost copy-btn" data-copy-from="pix-code" data-done="Código copiado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copiar código</button>
+          </div>
+          <p class="pix-recebedor">Antes de confirmar, veja se o recebedor no app do banco é a <strong>Comunidade Cristã Casa de Deus</strong>, CNPJ 63.330.094/0001-87.</p>
+        </div>
+      </div>
+      <p class="sr-feedback" role="status" aria-live="polite" style="position:absolute; left:-9999px;" id="copy-status"></p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Como ofertar pelo PIX</h2>
+      <div class="steps steps-3" style="margin-top:40px;">
+        <div class="step"><h3>Abra o app do banco</h3><p>Entre na área PIX e escolha pagar com QR code ou com chave.</p></div>
+        <div class="step"><h3>Use o código ou a chave</h3><p>Escaneie o QR code, cole o código copia e cola ou digite o CNPJ.</p></div>
+        <div class="step"><h3>Defina o valor e confirme</h3><p>Digite o valor da sua oferta, confira o recebedor e conclua.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width:680px;">
+        <h2>Por que contribuímos</h2>
+        <p>Tudo o que temos vem de Deus. Quando devolvemos uma parte, reconhecemos isso e participamos do que ele está fazendo por meio da igreja. Cada um contribui conforme decidiu no coração, sem pressão e com alegria.</p>
+        <span class="ref">2 Coríntios 9:7</span>
+      </div>
+      <div class="give-reasons">
+        <div><h3>Mantém a casa aberta</h3><p>Cultos, discipulado e a estrutura que recebe quem chega todo domingo.</p></div>
+        <div><h3>Cuida de famílias</h3><p>Projetos de ação social com famílias em vulnerabilidade em Marília.</p></div>
+        <div><h3>Investe em gerações</h3><p>O trabalho com crianças, adolescentes e jovens, como o Acampamento UP.</p></div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Casa de Deus</div>
+          <p>Uma comunidade em Marília, SP, aberta para receber você como parte da família. Fé, cuidado e propósito, todos debaixo do mesmo teto.</p>
+          <div class="social-row">
+            <a href="https://www.instagram.com/casadedeusmarilia/" target="_blank" rel="noopener" aria-label="Instagram da Casa de Deus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="jesus.html">Jesus</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="ministerios.html">Ministérios</a></li>
+            <li><a href="eventos.html">Agenda</a></li>
+            <li><a href="mensagens.html">Mensagens</a></li>
+            <li><a href="conecte-se.html">Conecte-se</a></li>
+            <li><a href="ofertas.html">Dízimos e ofertas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Cultos</h4>
+          <ul>
+            <li>Domingo, às 10h e às 18h</li>
+            <li>Discipulado: quinta, às 19h30</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Onde estamos</h4>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Avenida+Brasil%2C+350%2C+Mar%C3%ADlia+-+SP" target="_blank" rel="noopener">Av. Brasil, 350<br>Marília/SP</a></li>
+            <li><a href="https://www.instagram.com/casadedeusmarilia/" target="_blank" rel="noopener">@casadedeusmarilia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Comunidade Casa de Deus. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
