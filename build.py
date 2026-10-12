@@ -44,6 +44,7 @@ def icon(name):
 
 NAV_ITEMS = [
     ("index.html", "Início"),
+    ("jesus.html", "Jesus"),
     ("sobre.html", "Sobre"),
     ("ministerios.html", "Ministérios"),
     ("eventos.html", "Eventos"),
