@@ -44,4 +44,4 @@ e acesse `http://localhost:8000`.
 
 Fotos da página "Jesus": [Unsplash](https://unsplash.com) (créditos no rodapé da página).
 
-Desenvolvido por Danilo Azevedo.
+Desenvolvido por Danilo Azevedo para a comunidade casa de Deus.
